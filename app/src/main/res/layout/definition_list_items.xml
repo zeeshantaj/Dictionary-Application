@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="8dp"
+    app:cardBackgroundColor="@color/grey"
+    android:layout_margin="8dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textview_definition"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Definition"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColor="@color/yellow"
+            android:textAlignment="center"
+            android:padding="8dp"/>
+
+        <TextView
+            android:id="@+id/textview_example"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Example"
+            android:textSize="18sp"
+            android:textColor="@color/yellow"
+            android:textAlignment="center"
+            android:padding="8dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Synonyms"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColor="@color/yellow"
+            android:textAlignment="center"
+            android:padding="8dp"/>
+
+        <TextView
+            android:id="@+id/textview_synonyms"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textStyle="italic"
+            android:scrollHorizontally="true"
+            android:singleLine="true"
+            android:ellipsize="marquee"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:textSize="16sp"
+            android:textColor="@color/yellow"
+            android:textAlignment="center"
+            android:padding="8dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Antonyms"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColor="@color/yellow"
+            android:textAlignment="center"
+            android:padding="8dp"/>
+
+        <TextView
+            android:id="@+id/textview_antonyms"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textStyle="italic"
+            android:scrollHorizontally="true"
+            android:singleLine="true"
+            android:ellipsize="marquee"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:textSize="16sp"
+            android:textColor="@color/yellow"
+            android:textAlignment="center"
+            android:padding="8dp"/>
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
